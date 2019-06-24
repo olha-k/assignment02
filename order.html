@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Page</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home Page</a>
+    </nav>
+    <section>
+        <h1>Make your order now</h1>
+        <form method="POST" action="https://formspree.io/oliakukhta@gmail.com">
+            <label>Your Name:
+                <input type="text" name="name" placeholder="Name"required>
+            </label>
+            <br>
+            <label>Your Email:
+                <input type="email" name="email" placeholder="Email"required>
+            </label>
+            <br>
+            <label>Phone number:
+                <input type="tel" name="phone" placeholder="Phone number"required>
+            </label>
+            <br>
+            <label>Your Address:
+                <input type="text" name="address" placeholder="Address"required>
+            </label>
+            <br>
+            <label>Select your base choice
+            <select name="greens">
+                <option value="none">none</option>
+                <option value="kale">Kale</option>
+                <option value="spinach">Spinach</option>
+                <option value="cabbage">Cabbage</option>
+                <option value="arugula">Arugula</option>
+                <option value="arugula">Blend</option>
+            </select>
+            </label>
+            <br>
+            <label>Select your core topping
+            <select name="toppings">
+                <option value="none">none</option>
+                <option value="tomatoes">Tomatoes</option>
+                <option value="tofu">Tofu</option>
+                <option value="avocado">Avocado</option>
+                <option value="carrots">Carrots</option>
+                <option value="peppers">Peppers</option>
+            </select>
+            </label>
+            <br>
+            <label>Select crunch
+            <select name="crunch">
+                <option value="none">none</option>
+                <option value="walnuts">Walnuts</option>
+                <option value="tortilla">Tortilla Chips</option>
+                <option value="pumpkins">Pumpkin Seeds</option>
+                <option value="pita">Pita Chips</option>
+                <option value="cranberries">Dried Cranberries</option>
+            </select>
+            </label>
+            <br>
+            <label>Select grains or beans
+            <select name="grainsbeans">
+                <option value="none">none</option>
+                <option value="wquinoa">White Quinoa</option>
+                <option value="bbeans">Black Beans</option>
+                <option value="tquinoa">Tri-color Quinoa</option>
+                <option value="chickpeas">Chickpeas</option>
+                <option value="edamame">Edamame</option>
+            </select>
+            </label>
+            <br>
+            <p>Add dressing:</p>
+            <label> 
+                <input type="checkbox" name="dressing1" value="Ranch"> Spicy Ranch 
+            </label>
+            <label> 
+                <input type="checkbox" name="dressing2" value="Vinaigrette"> House Vinaigrette
+            </label>
+            <label> 
+                <input type="checkbox" name="dressing3" value="Caesar"> Mexican Ceasar 
+            </label>
+            <label> 
+                <input type="checkbox" name="dressing4" value="Oil"> Olive Oil
+            </label>
+            <br>
+            <p>Add a drink:</p>
+            <label> 
+                <input type="checkbox" name="drink1" value="Iced Tea"> Iced Tea
+            </label>
+            <label> 
+                <input type="checkbox" name="drink2" value="Iced Coffee"> Iced Coffee
+            </label>
+            <label> 
+                <input type="checkbox" name="drink3" value="Kambucha"> Kambucha
+            </label>
+            <p>Please add any additional comments or instructions regarding your order:</p>
+            <label>    
+              <textarea name="message" rows="10" cols="50" placeholder="Leave your comments here..."></textarea>
+            </label>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </section>
+</body>
+</html>
